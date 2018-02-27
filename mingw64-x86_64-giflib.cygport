@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-giflib"
-VERSION=4.1.6
+VERSION=5.1.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GIF image manipulation library for Win64 toolchain"
@@ -11,7 +11,5 @@ compression support."
 HOMEPAGE="http://sourceforge.net/projects/giflib/"
 SRC_URI="mirror://sourceforge/giflib/giflib-${VERSION}.tar.bz2"
 SRC_DIR="giflib-${VERSION}"
-PATCH_URI="4.1.6-no-undefined.patch"
 
-CYGCONF_ARGS="--disable-x11 --disable-gl --disable-rle"
 MAKEOPTS+=" bin_PROGRAMS= bin_SCRIPTS= "
